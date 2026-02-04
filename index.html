@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo border">
+            <img src="data:image/png;base64,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"
+                height="57">
+        </div>
+        <div class="deliver border">
+            <p>Deliver to</p>
+            <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>India</p>
+            </div>
+        </div>
+        <div class="dropsearchlogo">
+            <div class="dropdown">
+                <select name="All">
+                    <option value="All" class="drop-down">All</option>
+                </select>
+            </div>
+            <div class="search">
+                <input type="text" class="search-bar" placeholder="Search Amazon">
+            </div>
+            <div class="searchlogo">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="signin border">
+            <p>Hello,sign in</p>
+            <p><b>Accounts & Lists</b></p>
+        </div>
+        <div class="return border">
+            <p>Returns</p>
+            <p><b>& Orders</b></p>
+        </div>
+        <div class="cart border">
+            <div class="cartlogo">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Cart</p>
+            </div>
+        </div>
+    </div>
+    <div class="navbar2">
+        <div class="navsprite border">
+            <i class="fa-solid fa-bars"></i>
+            <p><b>All</b></p>
+        </div>
+        <div class="todayoffer border">
+            <p><b>Today's Deals</b></p>
+        </div>
+        <div class="primevideo border">
+            <p><b>Prime Video</b></p>
+        </div>
+        <div class="registry border">
+            <p><b>Registry</b></p>
+        </div>
+        <div class="giftcard border">
+            <p><b>Gift Cards</b></p>
+        </div>
+        <div class="coustomerservice border">
+            <p><b>Coustomer Service</b></p>
+        </div>
+        <div class="sell border">
+            <p><b>Sell</b></p>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="heromsg">
+            <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local
+                delivery. <a>Click here to go to amazon.in</a></p>
+        </div>
+    </div>
+    <div class="first">
+        <div class="box">
+            <p><b>Get Your Game On</b></p>
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Stores-Gaming/FinalGraphics/Fuji_Gaming_store_Dashboard_card_1x_EN._SY304_CB564799420_.jpg"
+                height="300" width="280">
+            <a>Shop Gaming</a>
+        </div>
+        <div class="box">
+            <p><b>New home arrivals under $50</b></p>
+            <div class="boximg">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/HomeSummerFlip/Homepage/QuadCards/Home_Flip_Summer_2024_315_HP_NewArrivals_QuadCard_D_01_1x._SY116_CB555960040_.jpg"
+                    height="100">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/HomeSummerFlip/Homepage/QuadCards/Home_Flip_Summer_2024_316_HP_NewArrivals_QuadCard_D_02_1x._SY116_CB555960040_.jpg"
+                    height="100">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/HomeSummerFlip/Homepage/QuadCards/Home_Flip_Summer_2024_317_HP_NewArrivals_QuadCard_D_03_1x._SY116_CB555960040_.jpg"
+                    height="100">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/HomeSummerFlip/Homepage/QuadCards/Home_Flip_Summer_2024_318_HP_NewArrivals_QuadCard_D_04_1x._SY116_CB555960040_.jpg"
+                    height="100">
+            </div>
+            <a>Shop the latest from home</a>
+        </div>
+        <div class="box">
+            <p><b>Shop Fashion for less</b></p>
+            <div class="boximg">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_1x._SY116_CB624172947_.jpg"
+                    height="100">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg"
+                    height="100">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg"
+                    height="100">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg"
+                    height="100">
+            </div>
+            <a>See all deals</a>
+        </div>
+        <div class="box">
+            <p><b>Shop for your home essentials</b></p>
+            <div class="boximg">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/CleaningTool_1x._SY116_CB563137408_.jpg"
+                    height="100">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeStorage_1x._SY116_CB563137408_.jpg"
+                    height="100">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeDecor_1x._SY116_CB563137408_.jpg"
+                    height="100">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/Bedding_1x._SY116_CB563137408_.jpg"
+                    height="100">
+            </div>
+            <a>Discover more in Home</a>
+        </div>
+    </div>
+    <div class="second">
+        <div class="box1">
+            <p><b>Fashion trends you like</b></p>
+            <div class="box1img">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_2_x1._SY116_CB595261253_.jpg"
+                    height="100">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_3_x1._SY116_CB595261253_.jpg"
+                    height="100">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_1_x1._SY116_CB595261253_.jpg"
+                    height="100">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_4_x1._SY116_CB595261253_.jpg"
+                    height="100">
+            </div>
+            <a>Explore more</a>
+        </div>
+        <div class="box1">
+            <p><b>Home upgrades under USD 50</b></p>
+            <div class="box1img">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2026/NYNY25/26_NYNY_DTQuad_Dining_B_1x._SY116_CB774262527_.jpg"
+                    height="100">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2026/NYNY25/26_NYNY_DTQuad_Home_B_1x._SY116_CB774262527_.jpg"
+                    height="100">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2026/NYNY25/26_NYNY_DTQuad_Kitchen_B_1x._SY116_CB774262527_.jpg"
+                    height="100">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2026/NYNY25/26_NYNY_DTQuad_Storage_B_1x._SY116_CB774262527_.jpg"
+                    height="100">
+            </div>
+            <a>Score New Year Deals</a>
+        </div>
+        <div class="box1">
+            <p><b>Level up your PC here</b></p>
+            <div class="box1img">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Laptop._SY116_CB549022351_.jpg"
+                    height="100">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_PC._SY116_CB549022351_.jpg"
+                    height="100">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Hard_Drives._SY116_CB549022351_.jpg"
+                    height="100">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Monitors._SY116_CB549022351_.jpg"
+                    height="100">
+            </div>
+            <a>Discover more</a>
+        </div>
+        <div class="box1">
+            <p><b>Gear up to get fit</b></p>
+            <div class="box1img">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Clothing._SY116_CB549022351_.jpg"
+                    height="100">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Trackers._SY116_CB549022351_.jpg"
+                    height="100">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Equipment._SY116_CB549022351_.jpg"
+                    height="100">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Deals_Fitness._SY116_CB549022351_.jpg"
+                    height="100">
+            </div>
+            <a>Discover more</a>
+        </div>
+    </div>
+    <div class="third">
+        <div class="box2">
+            <p><b>Best Sellers in Books</b></p>
+            <div class="box2img">
+                <img src="https://m.media-amazon.com/images/I/91ZVf3kNrcL._AC_SY200_.jpg" height="200">
+                <img src="https://m.media-amazon.com/images/I/81AHTyq2wVL._AC_SY200_.jpg" height="200">
+                <img src="https://m.media-amazon.com/images/I/81uMXwLcakL._AC_SY200_.jpg" height="200">
+                <img src="https://m.media-amazon.com/images/I/719tyQROiWL._AC_SY200_.jpg" height="200">
+                <img src="https://m.media-amazon.com/images/I/71CaU+HWrXL._AC_SY200_.jpg" height="200">
+                <img src="https://m.media-amazon.com/images/I/813k-BbIZ+L._AC_SY200_.jpg" height="200">
+                <img src="https://m.media-amazon.com/images/I/81LZXcfKqJL._AC_SY200_.jpg" height="200">
+                <img src="https://m.media-amazon.com/images/I/81kg51XRc1L._AC_SY200_.jpg" height="200">
+                <img src="https://m.media-amazon.com/images/I/71ojtb1VxuL._AC_SY200_.jpg" height="200">
+                <img src="https://m.media-amazon.com/images/I/81CWXchKvRL._AC_SY200_.jpg" height="200">
+            </div>
+        </div>
+    </div>
+    <div class="navbar3">
+        <div class="recommendations">
+            <p><b>See personalized recommendations</b></p>
+            <button>Sign in</button>
+            <p>New coustomer?<a>Start here</a></p>
+        </div>
+    </div>
+    <div class="navbar4">
+        <button>Back to top</button>
+    </div>
+    <div class="navbar5">
+        <div class="firstcoloumn">
+            <p><b>Get to Know Us</b></p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices</a>
+            <a>Amazon Science</a>
+        </div>
+        <div class="secondcoloumn">
+            <p><b>Make Money with Us</b></p>
+            <a>Sell products on Amazon</a>
+            <a>Sell on Amazon Business</a>
+            <a>Sell apps on Amazon</a> 
+            <a>Become an Affiliate</a> 
+            <a>Advertise Your Products</a>
+            <a>Self-Publish with Us</a>
+            <a>Host an Amazon Hub</a>
+            <a>›See More Make Money with Us</a>
+        </div>
+        <div class="thirdcoloumn">
+            <p><b>Amazon Payment Products</b></p>
+            <a>Amazon Business Card</a>
+            <a>Shop with Points</a>
+            <a>Reload Your Balance</a>
+            <a>Amazon Currency Converter</a>
+        </div>
+        <div class="fourthcoloumn">
+            <p><b>Let Us Help You</b></p>
+            <a>Amazon and COVID-19</a>
+            <a>Your Account</a>
+            <a>Your Orders</a>
+            <a>Shipping Rates & Policies</a>
+            <a>Returns & Replacements</a>
+            <a>Manage Your Content and Devices</a>
+            <a>Help</a>
+        </div>
+    </div>
+    <div class="end">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1280px-Amazon_logo.svg.png">
+        <p><b>Built by Aakansha | Amazon Clone Project</b></p>
+    </div>
+</body>
+</html>
